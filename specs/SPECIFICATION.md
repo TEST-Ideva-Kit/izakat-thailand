@@ -5,20 +5,9 @@
 **Status**: Draft
 **Input**: User wants to accurately calculate and manage their Zakat obligations according to Shafi'i jurisprudence.
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios &amp; Testing *(mandatory)*
 
-<!--
-  IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
-  Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
-  you should still have a viable MVP (Minimum Viable Product) that delivers value.
-  
-  Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
-  Think of each story as a standalone slice of functionality that can be:
-  - Developed independently
-  - Tested independently
-  - Deployed independently
-  - Demonstrated to users independently
--->
+
 
 ### User Story 1 - Accurately Calculate Zakat Amount (Priority: P1)
 
@@ -75,10 +64,7 @@ As a user, I want to record my Zakat payments and generate a receipt, so that I 
 
 ## Requirements *(mandatory)*
 
-<!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right functional requirements.
--->
+
 
 ### Functional Requirements
 
@@ -104,10 +90,7 @@ As a user, I want to record my Zakat payments and generate a receipt, so that I 
 
 ## Success Criteria *(mandatory)*
 
-<!--
-  ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
--->
+
 
 ### Measurable Outcomes
 
