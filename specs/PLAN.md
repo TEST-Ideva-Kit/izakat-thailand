@@ -15,7 +15,7 @@ This feature aims to develop a Zakat calculation and management application adhe
 **Testing**: Jest, React Testing Library (Frontend). Jest, Supertest (Backend API). End-to-end testing with Cypress.
 **Target Platform**: Web application accessible via modern browsers.
 **Project Type**: Full-stack Web Application with a distinct backend API service.
-**Performance Goals**: Frontend: Lighthouse score of 90+, fast page loads. Backend: p95 response time < 200ms for core Zakat calculation API.
+**Performance Goals**: Frontend: Lighthouse score of 90+, fast page loads. Backend: p95 response time &lt; 200ms for core Zakat calculation API.
 **Constraints**: WCAG 2.1 AA compliance, GDPR/data privacy compliance, OWASP Top 10 security adherence, calculations must be 100% accurate per Shafi'i jurisprudence.
 **Scale/Scope**: Designed for individual users; scalable to accommodate a growing user base through standard cloud deployment practices.
 
@@ -24,10 +24,10 @@ This feature aims to develop a Zakat calculation and management application adhe
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
 *   **Jurisprudence-First Calculation**: The core of this feature. All calculation logic, Nisab determination (based on current gold/silver prices), Hawl tracking, and asset/liability categorization will be meticulously implemented to align with Shafi'i jurisprudence. This will be a primary focus during development and testing.
-*   **User-Centric Design & Accessibility**: WCAG 2.1 AA compliance is a stated requirement (FR-012, SC-005). The UI will be designed for intuitiveness, with clear input forms for assets/liabilities and transparent presentation of calculations and receipts.
-*   **Data Integrity & Security**: User financial data is highly sensitive (Constitution, Technical Req). Implement robust security measures including OAuth2/OpenID Connect for authentication, Role-Based Access Control (RBAC) for any future roles, Multi-Factor Authentication (MFA), encryption of sensitive data at rest (PostgreSQL TDE or column-level encryption) and in transit (TLS/SSL). Comprehensive audit logs for all data access and modifications will be maintained.
-*   **Auditability & Transparency**: Detailed breakdowns of Zakat calculations will be provided (FR-008). Users can record payments and generate auditable receipts (FR-009, FR-010). Audit logs will further enhance transparency.
-*   **Modularity & API-First**: The backend will be developed as a distinct API service (e.g., using Express.js) that the Next.js frontend will consume. This promotes modularity and allows for potential future API consumers.
+*   **User-Centric Design &amp; Accessibility**: WCAG 2.1 AA compliance is a stated requirement (FR-012, SC-005). The UI will be designed for intuitiveness, with clear input forms for assets/liabilities and transparent presentation of calculations and receipts.
+*   **Data Integrity &amp; Security**: User financial data is highly sensitive (Constitution, Technical Req). Implement robust security measures including OAuth2/OpenID Connect for authentication, Role-Based Access Control (RBAC) for any future roles, Multi-Factor Authentication (MFA), encryption of sensitive data at rest (PostgreSQL TDE or column-level encryption) and in transit (TLS/SSL). Comprehensive audit logs for all data access and modifications will be maintained.
+*   **Auditability &amp; Transparency**: Detailed breakdowns of Zakat calculations will be provided (FR-008). Users can record payments and generate auditable receipts (FR-009, FR-010). Audit logs will further enhance transparency.
+*   **Modularity &amp; API-First**: The backend will be developed as a distinct API service (e.g., using Express.js) that the Next.js frontend will consume. This promotes modularity and allows for potential future API consumers.
 *   **Technology Stack**: Adheres to specified stack: React/Next.js (Frontend), Node.js/Express (Backend), PostgreSQL (Database), Redis (Caching).
 *   **Security**: OAuth2/OpenID Connect, RBAC, MFA, encryption, regular security audits (part of development process).
 *   **Observability**: Comprehensive logging (e.g., Winston), metrics (e.g., Prometheus client), and error tracking (e.g., Sentry integration via `@sentry/nextjs` on frontend and Sentry SDK on backend) will be implemented.
@@ -85,7 +85,7 @@ No significant violations of the Constitution are anticipated that require justi
 
 ## Phased Delivery Plan and Risks
 
-**Phase 0: Research & Design (1-2 Sprints)**
+**Phase 0: Research &amp; Design (1-2 Sprints)**
 *   **Tasks**:
     *   Deep dive into Shafi'i jurisprudence for Zakat calculation specifics (asset types, Nisab values for gold/silver, Hawl period, eligible deductions). Consult external resources or SMEs if needed.
     *   Define detailed data models for `User Profile`, `Asset`, `Liability`, `Zakat Calculation`, and `Payment Record`.
@@ -113,7 +113,7 @@ No significant violations of the Constitution are anticipated that require justi
     *   **Medium**: Security vulnerabilities in authentication/authorization or data handling. (Mitigation: Peer code reviews focused on security, static analysis tools, integration with security libraries).
     *   **Low**: Performance bottlenecks in the calculation engine for complex user data. (Mitigation: Profiling and optimization, caching strategies).
 
-**Phase 2: Frontend Implementation & Integration (2-3 Sprints)**
+**Phase 2: Frontend Implementation &amp; Integration (2-3 Sprints)**
 *   **Tasks**:
     *   Develop frontend components for user registration/login.
     *   Implement UI for adding, editing, and viewing assets and liabilities, including multi-currency support.
@@ -128,7 +128,7 @@ No significant violations of the Constitution are anticipated that require justi
     *   **Medium**: Issues with PDF receipt generation or formatting. (Mitigation: Use a reliable PDF generation library, rigorous testing with varied data).
     *   **Low**: Cross-browser compatibility issues. (Mitigation: Adherence to web standards, testing on major browsers).
 
-**Phase 3: Testing, Refinement & Deployment Prep (1-2 Sprints)**
+**Phase 3: Testing, Refinement &amp; Deployment Prep (1-2 Sprints)**
 *   **Tasks**:
     *   Conduct comprehensive end-to-end testing covering all user stories and edge cases.
     *   Perform security audits and penetration testing.
@@ -143,7 +143,7 @@ No significant violations of the Constitution are anticipated that require justi
     *   **Medium**: Performance issues under load. (Mitigation: Load testing, database query optimization, caching tuning).
     *   **Low**: Deployment configuration errors. (Mitigation: Staging environment testing, thorough documentation).
 
-**Phase 4: Post-Deployment Monitoring & Iteration (Ongoing)**
+**Phase 4: Post-Deployment Monitoring &amp; Iteration (Ongoing)**
 *   **Tasks**:
     *   Monitor application performance, errors, and security logs.
     *   Gather user feedback for future iterations.
